@@ -6,44 +6,57 @@
     <meta http-equiv="X-UA-compatible" content="ie=edge" content="chrome=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/results.css') }}">
+
     <title>Newlyweds</title>
-    <style>
-        div{
-            display: inline-block;
-        }
-    </style>
 </head>
 <body>
-    <div class="answers">
-    <h1>Results page</h1>
-    {% for correct in corrects %}
-    <h4>{{ correct['Answer1']}}</h4>
-    <h4>{{ correct['Answer2']}}</h4>
-    <h4>{{ correct['Answer3']}}</h4>
-    <h4>{{ correct['Answer4']}}</h4>
-    <h4>{{ correct['Answer5']}}</h4>
-    <h4>{{ correct['Answer6']}}</h4>
-    <h4>{{ correct['Answer7']}}</h4>
-    <h4>{{ correct['Answer8']}}</h4>
-    <h4>{{ correct['Answer9']}}</h4>
-    <h4>{{ correct['Answer10']}}</h4>
-    {% endfor %}
-    </div>
-    <div class="guesses">
-        {% for maybe in maybes %}
-        <h4>{{ maybe['Guess1']}}</h4>
-        <h4>{{ maybe['Guess2']}}</h4>
-        <h4>{{ maybe['Guess3']}}</h4>
-        <h4>{{ maybe['Guess4']}}</h4>
-        <h4>{{ maybe['Guess5']}}</h4>
-        <h4>{{ maybe['Guess6']}}</h4>
-        <h4>{{ maybe['Guess7']}}</h4>
-        <h4>{{ maybe['Guess8']}}</h4>
-        <h4>{{ maybe['Guess9']}}</h4>
-        <h4>{{ maybe['Guess10']}}</h4>
-        {% endfor %}
-    </div>
-    <a href="/restart"><button>Play Again!</button></a>
+    <header>
+        <div class="top-nav">
+            <h2>
+                 Results!
+            </h2>
+        </div>
+    </header>
+    <section class="results">
+            <div class="answers">
+                <h2>Your Answers</h2>
+                {% for correct in corrects %}
+                <h4>1. {{ correct['Answer1']}}</h4>
+                <h4>2. {{ correct['Answer2']}}</h4>
+                <h4>3. {{ correct['Answer3']}}</h4>
+                <h4>4. {{ correct['Answer4']}}</h4>
+                <h4>5. {{ correct['Answer5']}}</h4>
+                <h4>6. {{ correct['Answer6']}}</h4>
+                <h4>7. {{ correct['Answer7']}}</h4>
+                <h4>8. {{ correct['Answer8']}}</h4>
+                <h4>9. {{ correct['Answer9']}}</h4>
+                <h4>10. {{ correct['Answer10']}}</h4>
+                {% endfor %}
+            </div>
+            <div class="guesses">
+                <h2>Their Answers</h2>
+                {% for maybe in maybes %}
+                <h4>1. {{ maybe['Guess1']}}</h4>
+                <h4>2. {{ maybe['Guess2']}}</h4>
+                <h4>3. {{ maybe['Guess3']}}</h4>
+                <h4>4. {{ maybe['Guess4']}}</h4>
+                <h4>5. {{ maybe['Guess5']}}</h4>
+                <h4>6. {{ maybe['Guess6']}}</h4>
+                <h4>7. {{ maybe['Guess7']}}</h4>
+                <h4>8. {{ maybe['Guess8']}}</h4>
+                <h4>9. {{ maybe['Guess9']}}</h4>
+                <h4>10. {{ maybe['Guess10']}}</h4>
+                {% endfor %}
+            </div>
+            <div class="reset">
+                <a href="/restart"><button>Play Again!</button></a>
+            </div>
+    </section>
+    <footer class="copyright">
+        <p>&copy; 2020 Brian Shockency</p>
+    </footer>
+
      <!-- Jquery , Popper.js, bootstrap JS  -->
      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

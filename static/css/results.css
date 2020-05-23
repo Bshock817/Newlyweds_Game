@@ -1,0 +1,86 @@
+/* Global styles */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+    color: #eee;
+    height: 86.3%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: rgb(248, 225, 225);
+}
+/* End Global */
+
+/* Header */
+.top-nav{
+    border-bottom: solid black 2px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 8px;
+    height: 6vh;
+}
+.top-nav h2{
+    font-size: 2rem;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+header{
+    background-color: pink;
+}
+/* End Header */
+
+/* Results */
+section{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 2rem;
+    text-align: center;
+}
+.answers{
+    display: inline-block;
+    text-align: center;
+    margin-right: 55px;
+}
+.guesses{
+    display: inline-block;
+    text-align: center;
+    margin-left: 55px;
+}
+button{
+    width: 25%;
+    height: 5vh;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px ridge pink;
+    color: red;
+    margin: 1rem;
+}
+button:hover{
+    background: linear-gradient(to bottom, rgb(255, 166, 181), rgb(247, 189, 189));
+}
+.reset{
+    text-align: center;
+}
+/* End Results */
+
+/* Footer */
+.copyright{
+    width: 100%;
+    background-color: pink;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    border-top: black solid 2px;
+}
+.copyright p{
+    font-size: 1rem;
+}
+/* End Footer */
