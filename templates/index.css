@@ -1,4 +1,4 @@
-/* global styles */
+/* Global styles */
 *{
     margin: 0px;
     padding: 0px;
@@ -51,3 +51,4 @@ button:hover{
 .fa-heart{
     color: red;
 }
+/* End Header */
