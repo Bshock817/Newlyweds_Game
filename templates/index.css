@@ -30,8 +30,8 @@ body{
 }
 .landing-text h1{
     font-size: 15rem;
-    font-family: monospace;
-    background: linear-gradient(to bottom,rgb(255, 81, 81), red);
+    font-family: 'Dotum';
+    background: linear-gradient(to bottom,rgb(252, 113, 113), red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
