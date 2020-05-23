@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-compatible" content="ie=edge" content="chrome=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/game.css') }}">
     <title>Newlyweds</title>
 </head>
 <body>
@@ -18,49 +18,48 @@
         </div>
     </header>
     <section>
-        <form action="on_answers" method="POST">
+        <form action="on_guesses" method="POST">
             <div class="form-group">
               <label for="question1">Question 1: <br> Where did yall meet?</label>
-              <input type="password" class="form-control" name="question1" required>
+              <input type="text" class="form-control" name="question1" required>
             </div>
             <div class="form-group">
               <label for="question2">Question 2: <br> Who said "I Love You" first?</label>
-              <input type="password" class="form-control" name="question2" required>
+              <input type="text" class="form-control" name="question2" required>
             </div>
             <div class="form-group">
                 <label for="question3">Question 3: <br> Who is the most cranky in the morning?</label>
-                <input type="password" class="form-control" name="question3" required>
+                <input type="text" class="form-control" name="question3" required>
             </div>
             <div class="form-group">
                 <label for="question4">Question 4: <br> What is their worst habit?</label>
-                <input type="password" class="form-control" name="question4" required>
+                <input type="text" class="form-control" name="question4" required>
             </div>
             <div class="form-group">
                 <label for="question5">Question 5: <br>What is their Zodiak sign?</label>
-                <input type="password" class="form-control" name="question5" required>
+                <input type="text" class="form-control" name="question5" required>
             </div>
             <div class="form-group">
                 <label for="question6">Question 6: <br>What is their Dream Car?</label>
-                <input type="password" class="form-control" name="question6" required>
+                <input type="text" class="form-control" name="question6" required>
             </div>
             <div class="form-group">
                 <label for="question7">Question 7: <br> What is their favorite Movie?</label>
-                <input type="password" class="form-control" name="question7" required>
+                <input type="text" class="form-control" name="question7" required>
             </div>
             <div class="form-group">
                 <label for="question8">Question 8: <br> what is thier shoe size?</label>
-                <input type="password" class="form-control" name="question8" required>
-                <small>please write number out</small>
+                <input type="text" class="form-control" name="question8" required>
             </div>
             <div class="form-group">
                 <label for="question9">Question 9: <br>What is the thing they're most likely to go viral for?</label>
-                <input type="password" class="form-control" name="question9" required>
+                <input type="text" class="form-control" name="question9" required>
             </div>
             <div class="form-group">
                 <label for="question10">Question 10: <br>Who will be the most hungover after the wedding?</label>
-                <input type="password" class="form-control" name="question10"required>
+                <input type="text" class="form-control" name="question10" required>
             </div>
-            <button type="submit">Test Your lover</button>
+            <button type="submit">Lets See the Results</button>
         </form>
     </section>
     <footer class="copyright">
